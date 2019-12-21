@@ -1,4 +1,4 @@
-#p1 {
+/*#p1 {
   font-size: 96px;
   font-family: Open Sans;
   text-align: center;
@@ -13,7 +13,7 @@
 body {
   background: white;
 }
-.themeBtn {
+.btn {
 	background-color:#f5f5f5;
 	border-radius:6px;
 	border:1px solid #a8a8a8;
@@ -26,28 +26,28 @@ body {
 	text-decoration:none;
 	text-shadow:0px 1px 0px #e0e0e0;
 }
-.themeBtn:hover {
+.btn:hover {
 	background-color:#e3e3e3;
 }
-.themeBtn:active {
+.btn:active {
 	position:relative;
 	top:1px;
 }
-.upgbtn {
+#upgbtn {
   position: relative;
-  padding-left: 10%;
+  margin-left: 10px;
 }
 #lighttheme {
-	position: relative;
-	margin-left: 72%;
+  position: relative;
+  margin-left: 74%;
 }
 #bottomdiv {
-	  position: relative;
-	  padding-top: 8%;
+  position: relative;
+  padding-top: 10%;
 }
 #clickdiv {
-	position: relative;
-	margin-left: 25%;
+  position: relative;
+  margin-left: 25%;
 }
 #clickbtn {
 	position: relative;
@@ -70,4 +70,219 @@ body {
 #clickbtn:active {
   position:relative;
   top:1px;
+}*/
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  #p1 {
+    font-size: 96px;
+    font-family: Open Sans;
+    text-align: center;
+    color: black;
+  }
+  #p2 {
+    font-size: 16px;
+    font-family: Open Sans;
+    text-align: center;
+    color: black;
+  }
+  body {
+    background: white;
+  }
+  .btn {
+    background-color: #f5f5f5;
+    border-radius: 6px;
+    border: 1px solid #a8a8a8;
+    display: inline-block;
+    cursor: pointer;
+    color: #000000;
+    font-family: Open Sans;
+    font-size: 17px;
+    padding: 7px 18px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #e0e0e0;
+  }
+  .btn:hover {
+    background-color: #e3e3e3;
+  }
+  .btn:active {
+    position: relative;
+    top: 1px;
+  }
+  #upgbtn {
+    position: relative;
+    margin-left: 10px;
+  }
+	#lighttheme {
+		position: relative;
+		margin-left: 71%;
+	}
+  #bottomdiv {
+    position: relative;
+    padding-top: 10%;
+  }
+  #clickdiv {
+    position: relative;
+    margin-left: 25%;
+  }
+  #clickbtn {
+    position: relative;
+    margin-left: 2px;
+    background-color: #f5f5f5;
+    border-radius: 6px;
+    border: 1px solid #a8a8a8;
+    display: inline-block;
+    cursor: pointer;
+    color: #000000;
+    font-family: Open Sans;
+    font-size: 17px;
+    padding: 10% 32%;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #575757;
+  }
+  #clickbtn:hover {
+    background-color: #e3e3e3;
+  }
+  #clickbtn:active {
+    position: relative;
+    top: 1px;
+  }
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  body {
+    background-color: skyblue;
+  }
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    background-color: red;
+  }
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  body {
+    background-color: black;
+  }
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  body {
+    background-color: white;
+  }
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  #p1 {
+    font-size: 96px;
+    font-family: Open Sans;
+    text-align: center;
+    color: black;
+  }
+  #p2 {
+    font-size: 16px;
+    font-family: Open Sans;
+    text-align: center;
+    color: black;
+  }
+  body {
+    background: white;
+  }
+  .btn {
+    position: relative;
+    margin-left: 2px;
+    background-color: #f5f5f5;
+    border-radius: 6px;
+    border: 1px solid #a8a8a8;
+    display: inline-block;
+    cursor: pointer;
+    color: #000000;
+    font-family: Open Sans;
+    font-size: 16px;
+    padding: 2% 3%;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #e0e0e0;
+  }
+  .btn:hover {
+    background-color: #e3e3e3;
+  }
+  .btn:active {
+    position: relative;
+    top: 1px;
+  }
+  #upgbtn {
+    position: relative;
+    margin-left: 5px;
+  }
+  #lighttheme {
+    position: fixed;
+    right: 5px
+  }
+  #darktheme {
+    position: absolute;
+    right: 130px
+  }
+  #bottomdiv {
+    position: fixed;
+    width: 100%;
+    bottom: 3%;
+    left: 0px;
+    right: 0px;
+  }
+  #clickdiv {
+    position: relative;
+    margin-left: 7%;
+  }
+  #clickbtn {
+    position: relative;
+    margin-left: 2px;
+    background-color: #f5f5f5;
+    border-radius: 6px;
+    border: 1px solid #a8a8a8;
+    display: inline-block;
+    cursor: pointer;
+    color: #000000;
+    font-family: Open Sans;
+    font-size: 17px;
+    padding: 20% 40%;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #575757;
+  }
+  #clickbtn:hover {
+    background-color: #e3e3e3;
+  }
+  #clickbtn:active {
+    position: relative;
+    top: 1px;
+  }
 }
