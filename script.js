@@ -1,18 +1,31 @@
+
+const clickBtn = document.getElementById(`clickbtn`)
+const upgBtn = document.getElementById(`upgbtn`)
+const lT = document.getElementById(`lighttheme`)
+const dT = document.getElementById(`darktheme`)
+const theme = document.getElementById(`theme`)
+
 let pt = 0
 let clickVal = 1
-let upgCost = 50
+let upgCost = 75
 
-function Click () {
+clickBtn.onclick = click
+upgBtn.onclick = upgrade
+lT.onclick = () => { theme.href = `css/light.css` }
+dT.onclick = () => { theme.href = `css/dark.css` }
+document.body.onload = [updateVal(`p2`, `Upgrade cost: ${upgCost}`), updateVal(`p1`, pt)]
+
+function click () {
   pt = pt + clickVal
   updateVal(`p1`, pt)
 }
 
-function Upgrade () {
+function upgrade () {
   if (pt >= upgCost) {
     pt = pt - upgCost
-    upgCost = upgCost * 2
+    upgCost = Math.floor(1.75 * upgCost)
     updateVal(`p1`, pt)
-    ShowUpgCost()
+    updateVal(`p2`, `Upgrade cost: ${upgCost}`)
     clickVal++
   } else {
     alert(`Insufficient funds!`)
@@ -21,9 +34,4 @@ function Upgrade () {
 
 function updateVal (id, newval) {
   document.getElementById(id).innerHTML = newval
-}
-
-function ShowUpgCost() {
-  const ihtml = document.getElementById(`upgCost`).innerHTML
-  document.getElementById(`upgCost`).innerHTML = ihtml.replace(`{%}`, upgCost)
 }

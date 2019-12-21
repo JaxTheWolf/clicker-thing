@@ -2,17 +2,25 @@
 <html>
 
 <head>
-    <title>A Clicker Thing</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
-    <body onload="ShowUpgCost()">
+  <title>A Clicker Thing</title>
+  <link rel="stylesheet" href="css/dark.css" id="theme">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
 </head>
 
 <body>
-    <p id="p1">0</p>
-    <p id="upgCost">Upgrade cost: {%}</p>
-    <input type="button" id="clickbtn" class="myBTN" value="Click!" onclick="Click()" >
-    <input type="button" id="upgbtn" class="myBTN" value="Upgrade!" onclick="Upgrade()">
+  <p id="p1"></p>
+  <p id="p2"></p>
+  <div id="clickdiv">
+    <input type="button" id="clickbtn" value="Click!"></input>
+  </div>
+
+  <div id="bottomdiv">
+    <input type="button" id="upgbtn" value="Upgrade!"></input>
+    <input type="button" id="lighttheme" class="themeBtn" value="Light Theme"></input>
+    <input type="button" id="darktheme" class="themeBtn" value="Dark Theme"></input>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
