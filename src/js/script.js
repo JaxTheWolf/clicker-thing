@@ -1,4 +1,3 @@
-
 const clickBtn = document.getElementById(`clickbtn`)
 const upgBtn = document.getElementById(`upgbtn`)
 const lT = document.getElementById(`lighttheme`)
@@ -9,18 +8,12 @@ let pt = 0
 let clickVal = 1
 let upgCost = 75
 
-clickBtn.onclick = click
-upgBtn.onclick = upgrade
-lT.onclick = () => { theme.href = `css/light.css` }
-dT.onclick = () => { theme.href = `css/dark.css` }
-document.body.onload = [updateVal(`p2`, `Upgrade cost: ${upgCost}`), updateVal(`p1`, pt)]
-
-function click () {
+const click = () => {
   pt = pt + clickVal
   updateVal(`p1`, pt)
 }
 
-function upgrade () {
+const upgrade = () => {
   if (pt >= upgCost) {
     pt = pt - upgCost
     upgCost = Math.floor(1.75 * upgCost)
@@ -32,6 +25,13 @@ function upgrade () {
   }
 }
 
-function updateVal (id, newval) {
+const updateVal = (id, newval) => {
   document.getElementById(id).innerHTML = newval
 }
+
+// Event handlers
+clickBtn.onclick = click
+upgBtn.onclick = upgrade
+lT.onclick = () => { theme.href = `css/light.css` }
+dT.onclick = () => { theme.href = `css/dark.css` }
+document.body.onload = [updateVal(`p2`, `Upgrade cost: ${upgCost}`), updateVal(`p1`, pt)]
