@@ -1,4 +1,4 @@
-#p1 {
+/* #p1 {
   font-size: 96px;
   font-family: Open Sans;
   text-align: center;
@@ -72,9 +72,58 @@ body {
 #clickbtn:active {
 	position:relative;
 	top:1px;
+} */
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+@media (min-width: 1281px) {
+	body {
+		background-color: brown;
+	}
 }
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+	body {
+		background-color: blue;
+	}
+}
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+	body {
+		background-color: red;
+	}
+}
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) { 
+	body {
+		background-color: black;
+	}
+}
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+@media (min-width: 481px) and (max-width: 767px) {
+	body {
+		background-color: white;
+	}
+}
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
 @media (min-width: 320px) and (max-width: 480px) {
 	body {
-		background: brown;
+		background-color: blue;
 	}
 }
