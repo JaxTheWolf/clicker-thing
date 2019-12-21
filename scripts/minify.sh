@@ -1,9 +1,9 @@
 #!/bin/bash
 cd ../src
 
-node-minify --compressor csso --input css/light.css --output ../dist/css/light.css
-node-minify --compressor csso --input css/dark.css --output ../dist/css/dark.css
+node-minify --compressor csso --input public/light.css --output ../dist/public/light.css
+node-minify --compressor csso --input public/dark.css --output ../dist/public/dark.css
 
-node-minify --compressor google-closure-compiler --input js/script.js --output ../dist/js/script.js
+node-minify --compressor google-closure-compiler --input public/script.js --output ../dist/public/script.js
 
 node-minify --compressor html-minifier --input index.html --output ../dist/index.html
