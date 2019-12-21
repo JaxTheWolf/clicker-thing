@@ -3,7 +3,7 @@ const upgBtn = document.getElementById(`upgbtn`)
 const lT = document.getElementById(`lighttheme`)
 const dT = document.getElementById(`darktheme`)
 const theme = document.getElementById(`theme`)
-const themes = { 0: `css/dark.css`, 1: `css/light.css` }
+const themes = { 0: `/css/dark.css`, 1: `/css/light.css` }
 
 let pt = 0
 let clickVal = 1
