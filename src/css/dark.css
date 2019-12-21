@@ -36,22 +36,23 @@
 	.btn:hover {
 		background-color: #454545;
 	}
-	.btn:active {
-		position: relative;
-		top: 1px;
-	}
-	#upgbtn {
-		position: relative;
-		margin-left: 10px;
-	}
+  #upgbtn {
+    position: fixed;
+    left: 5px;
+    bottom: 5px;
+  }
 	#lighttheme {
-		position: relative;
-		margin-left: 71%;
-	}
-	#bottomdiv {
-		position: relative;
-		padding-top: 10%;
-	}
+		position: fixed;
+    right: 5px;
+    bottom: 5px;
+    visibility: visible;
+  }
+  #darktheme {
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+		visibility: hidden;
+  }
 	#clickdiv {
 		position: relative;
 		margin-left: 25%;
@@ -153,22 +154,27 @@
 	.btn:hover {
 		background-color: #454545;
 	}
-	.btn:active {
-		position: relative;
-		top: 1px;
-	}
 	#upgbtn {
 		position: relative;
 		margin-left: 5px;
 	}
+  #upgbtn {
+    position: fixed;
+    left: 5px;
+    bottom: 5px;
+  }
 	#lighttheme {
 		position: fixed;
-		right: 130px
-	}
-	#darktheme {
-		position: absolute;
-		right: 5px
-	}
+    right: 5px;
+    bottom: 5px;
+    visibility: visible;
+  }
+  #darktheme {
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+		visibility: hidden;
+  }
 	#bottomdiv {
 		position: fixed;
 		width: 100%;
