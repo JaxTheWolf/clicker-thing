@@ -4,6 +4,9 @@
   "plugins": [
     "eslint-plugin-json"
   ],
+  "env": {
+    "browser": true
+  },
   "rules": {
     "indent": [
       "error",
